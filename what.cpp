@@ -4,7 +4,7 @@ using namespace std;
 
 char board[3][3] = {
 		{' ',' ',' '},
-		{' ',' ',' '},
+		{' ',' ',' '}, //asfdasd
 		{' ',' ',' '},
 	};;
 
