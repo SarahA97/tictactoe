@@ -7,13 +7,10 @@ string playerName;
 char token = '_';
 
 Player::Player(){
-	cout << "ggg" << endl;
-	cout << token << endl;
 }
 
 Player::Player(char token){
 	this->token = token;
-	cout << token << endl;
 }
 
 void Player::setName(string name){

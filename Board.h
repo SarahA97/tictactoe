@@ -7,10 +7,11 @@ class Board : public Subject{
 
 	public:
 		Board();
-		//virtual ~Board();
+		virtual ~Board();
 		void notifyObservers();
 		void resetBoard();
 		void drawBoard();
+		bool checkWin();
 		void attachPlayer(Player _player);
-		//void detachPlayer(Player xplayer);
+		//void detachPlayer(Player _player);
 };
