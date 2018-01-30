@@ -4,13 +4,13 @@
 using namespace std;
 
 string playerName;
-char token = '_';
+char token;
 
 Player::Player(){
 }
 
-Player::Player(char token){
-	this->token = token;
+Player::Player(char _token){
+	token = _token;
 }
 
 void Player::setName(string name){
@@ -22,9 +22,13 @@ string Player::getName(){
 	return playerName;
 }
 
+char Player::getToken(){
+	return token;
+}
+
 string Player::update(){
 	string input;
-	cout << playerName << "'s turn" << endl;
+	cout << playerName << "'s turn: ";
 	cin >> input;
 	return input;
 }

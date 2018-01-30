@@ -1,15 +1,15 @@
-#include "Observer.h"
 #include <string>
 using namespace std;	
 
-class Player : public Observer{
+class Player{
 	private:
 		string playerName;
+		char token;
 	public:
 		Player();
-		Player(char token);
+		Player(char _token);
 		void setName(string name);
 		string getName();
+		char getToken();
 		string update();
-		char token;
 };
